@@ -135,7 +135,7 @@ public class CadastroPropostaSeguroPage {
 		Date dataInicial = new Date();
 		dataInicial = DateUtils.addMonths(dataInicial, 1);
 		dataInicial = DateUtils.addDays(dataInicial, 1);
-		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
 		driver.findElement(By.cssSelector("#startdate")).sendKeys(formatter.format(dataInicial));
 		
 	}
